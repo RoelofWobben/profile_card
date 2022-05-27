@@ -30,6 +30,10 @@ img{
     height: 180px;
 }
 
+h2{
+    color: var(--desaturated_blue);
+}
+
 .card{
     width: 330px;
     background-color:white;;
@@ -57,3 +61,26 @@ img{
     font-weight: 700;
 }
 
+p, .age{
+    color: var(--gray);
+    font-weight: 400;
+}
+
+.london{
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.hr{
+    color: var(--grey);
+}
+
+.stats{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
