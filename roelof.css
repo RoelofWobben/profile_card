@@ -12,8 +12,7 @@
 }
 
 body {
-    width: 100%;
-	height: 100vh;
+   	height: 100vh;
 	display: flex;
 	align-items: center;
     justify-content: center;
@@ -22,37 +21,32 @@ body {
 	background-position: bottom 50vh right 50vw, top 50vh left 50vw;
 	background-repeat: no-repeat;
     font-family: 'Kumbh Sans', sans-serif;
-    font-size:18px;
+    font-size: 1.125rem; 
     font-weight: 400;
 }
 
-img{
-    height: 180px;
-}
 
 h2{
     color: var(--desaturated_blue);
 }
 
-.card{
+main{
     width: 330px;
     background-color:white;;
     border-radius: 20px;
     overflow:hidden;
 }
 
-.card_image img{
-    height: 96px;
-    width: 96px;
-    border-radius: 50%;
-    border: 5px white solid;
-    position: relative;
-    left: 120px;
-    top: -60px;
-
+.card_image {
+    display: flex; 
+    justify-content: center;
+    margin-top: -3.5rem; 
 
 }
-
+.card_image img {
+    border-radius: 50%;
+    border: 5px solid white;  
+}
 .card_personal_data{
     text-align: center;
 }
@@ -75,12 +69,60 @@ p, .age{
     color: var(--grey);
 }
 
-.stats{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex; 
-    flex-direction: row;
+.stats-list {
+    display: flex;
     justify-content: space-evenly;
-    text-align: center;
-
+    position: relative;
+    flex-wrap: wrap;
+    padding: 1.44444rem 1rem;
 }
+
+.stats-list > * {
+    list-style-type: none;
+    position: relative;
+}
+
+.stats-list:before {
+    content: '';
+    height: 1px;
+    background: #969696;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+
+.stats-list-item {
+    color: #6a6f81;
+    text-align: center;
+    margin: 0.33333rem;
+}
+
+.list-item:first-of-type {
+    margin-left: 0;
+  }
+  
+  .list-item:last-of-type {
+    margin-right: 0;
+  }
+
+.stat-number,
+.stat-label {
+  display: block;
+}
+
+.stat-number {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2d3248;
+  }
+  
+.stat-label {
+    font-size: 0.66667rem;
+    margin-top: 0.33333rem;
+    letter-spacing: 1px;
+}
+
+  
+
